@@ -84,22 +84,6 @@ public class CreateContactWithOrganizationsTest  extends BaseClass{
 	
 	
 	
-	//Step 12: Navigate to Organizations look up image
-	driver.findElement(By.xpath(" //input[@name='account_name']/following-sibling::img[@title='Select']")).click();
-			
-    //Step 13: Switch the control to organizations window
-	wutil.switchToWindow(driver, "Accounts");           
-	driver.findElement(By.name("search_text")).sendKeys(ORGNAME);
-	driver.findElement(By.name("search")).click();
-			
-	driver.findElement(By.xpath("//a[text()='"+ORGNAME+"']")).click();//Dynamic Xpath - Xpath generated at run time
-			 
-    //Step 14: Switch the control back to parent window
-	wutil.switchToWindow(driver, "Contacts");
-			
-	//Step 15: save
-	driver.findElement(By.xpath("//input[@title='Save [Alt+S]']")).click();
-			
 	//Step 16: Validate for Contacts
 	ContactsInfoPage cip= new ContactsInfoPage(driver);
 	String ContactHeader = cip.getContactHeader();
