@@ -1,91 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Organization is clicked]]>
+    </line>
+    <line>
+      <![CDATA[Create Organization look up imageis clicked]]>
+    </line>
+    <line>
+      <![CDATA[Organization is createdWipro603]]>
+    </line>
+    <line>
+      <![CDATA[Contact is clicked]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-12-23T16:00:23 IST" name="Suite" finished-at="2022-12-23T16:00:25 IST" duration-ms="1684">
+  <suite started-at="2022-12-23T16:26:02 IST" name="Default suite" finished-at="2022-12-23T16:27:43 IST" duration-ms="100311">
     <groups>
+      <group name="RegressionSuite">
+        <method signature="CreateContactWithOrganizationsTest.DemoTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" name="DemoTest" class="vTiger.ContactsTests.CreateContactWithOrganizationsTest"/>
+      </group> <!-- RegressionSuite -->
       <group name="SmokeSuite">
-        <method signature="CreateContactWithOrganizationsTest.createContactWithOrgTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@158d2680]" name="createContactWithOrgTest" class="vTiger.ContactsTests.CreateContactWithOrganizationsTest"/>
+        <method signature="CreateContactWithOrganizationsTest.createContactWithOrgTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" name="createContactWithOrgTest" class="vTiger.ContactsTests.CreateContactWithOrganizationsTest"/>
       </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2022-12-23T16:00:23 IST" name="Test" finished-at="2022-12-23T16:00:25 IST" duration-ms="1684">
+    <test started-at="2022-12-23T16:26:02 IST" name="Default test" finished-at="2022-12-23T16:27:43 IST" duration-ms="100311">
       <class name="vTiger.ContactsTests.CreateContactWithOrganizationsTest">
-        <test-method is-config="true" signature="bsconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@158d2680]" started-at="2022-12-23T16:00:23 IST" name="bsconfig" finished-at="2022-12-23T16:00:23 IST" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="bsconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:26:02 IST" name="bsconfig" finished-at="2022-12-23T16:26:02 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsconfig -->
-        <test-method is-config="true" signature="bmconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@158d2680]" started-at="2022-12-23T16:00:25 IST" name="bmconfig" finished-at="2022-12-23T16:00:25 IST" duration-ms="200" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at vTiger.ObjectRepository.LoginPage.loginToApp(LoginPage.java:51)
-at vTiger.GenericUtilities.BaseClass.bmconfig(BaseClass.java:84)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method is-config="true" signature="bcconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:26:03 IST" name="bcconfig" finished-at="2022-12-23T16:26:15 IST" duration-ms="12264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcconfig -->
+        <test-method is-config="true" signature="bmconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:26:15 IST" name="bmconfig" finished-at="2022-12-23T16:26:36 IST" duration-ms="20779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmconfig -->
-        <test-method signature="createContactWithOrgTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@158d2680]" started-at="2022-12-23T16:00:25 IST" name="createContactWithOrgTest" finished-at="2022-12-23T16:00:25 IST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="DemoTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:26:36 IST" name="DemoTest" finished-at="2022-12-23T16:26:36 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DemoTest -->
+        <test-method is-config="true" signature="amconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:26:36 IST" name="amconfig" finished-at="2022-12-23T16:26:54 IST" duration-ms="18584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amconfig -->
+        <test-method is-config="true" signature="bmconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:26:54 IST" name="bmconfig" finished-at="2022-12-23T16:26:57 IST" duration-ms="2347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmconfig -->
+        <test-method signature="createContactWithOrgTest()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:26:57 IST" name="createContactWithOrgTest" finished-at="2022-12-23T16:27:40 IST" duration-ms="43180" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Contact...']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DELL', ip: '192.168.126.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d6cbbc0299b99c34cc54b8e0b90b865, findElement {using=xpath, value=//img[@title='Create Contact...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JAGADE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50285/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d6cbbc0299b99c34cc54b8e0b90b865]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//img[@title='Create Contact...']"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'DELL', ip: '192.168.126.1', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '17.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6d6cbbc0299b99c34cc54b8e0b90b865, findElement {using=xpath, value=//img[@title='Create Contact...']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\JAGADE~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50285}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50285/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6d6cbbc0299b99c34cc54b8e0b90b865
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
-at vTiger.ObjectRepository.LoginPage.loginToApp(LoginPage.java:51)
-at vTiger.GenericUtilities.BaseClass.bmconfig(BaseClass.java:84)
+at jdk.proxy2/jdk.proxy2.$Proxy22.click(Unknown Source)
+at vTiger.ObjectRepository.ContactsPage.ClickOnCreateContactImg(ContactsPage.java:33)
+at vTiger.ContactsTests.CreateContactWithOrganizationsTest.createContactWithOrgTest(CreateContactWithOrganizationsTest.java:77)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -110,19 +123,35 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
+            <line>
+              <![CDATA[Organization is clicked]]>
+            </line>
+            <line>
+              <![CDATA[Create Organization look up imageis clicked]]>
+            </line>
+            <line>
+              <![CDATA[Organization is createdWipro603]]>
+            </line>
+            <line>
+              <![CDATA[Contact is clicked]]>
+            </line>
           </reporter-output>
         </test-method> <!-- createContactWithOrgTest -->
-        <test-method is-config="true" signature="amconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@158d2680]" started-at="2022-12-23T16:00:25 IST" name="amconfig" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1671791425465" status="SKIP">
+        <test-method is-config="true" signature="amconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:27:40 IST" name="amconfig" finished-at="2022-12-23T16:27:42 IST" duration-ms="1731" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amconfig -->
-        <test-method is-config="true" signature="ascongif()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@158d2680]" started-at="2022-12-23T16:00:26 IST" name="ascongif" finished-at="2022-12-23T16:00:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afconfig()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:27:42 IST" name="afconfig" finished-at="2022-12-23T16:27:43 IST" duration-ms="714" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afconfig -->
+        <test-method is-config="true" signature="ascongif()[pri:0, instance:vTiger.ContactsTests.CreateContactWithOrganizationsTest@36bc55de]" started-at="2022-12-23T16:27:43 IST" name="ascongif" finished-at="2022-12-23T16:27:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ascongif -->
       </class> <!-- vTiger.ContactsTests.CreateContactWithOrganizationsTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
