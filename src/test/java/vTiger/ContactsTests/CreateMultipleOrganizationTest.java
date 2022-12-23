@@ -33,7 +33,6 @@ public class CreateMultipleOrganizationTest extends BaseClass {
 
 			
 
-			
 
 			// Step 4: Click on Organizations Link
 			HomePage hp = new HomePage(driver);
